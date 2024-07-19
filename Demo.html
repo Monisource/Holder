@@ -55,17 +55,6 @@
         background-color: #2980b9;
     }
 </style>
-<script>
-    function updateFormAction() {
-        var form = document.getElementById("demo-request-form");
-        var recipient = document.getElementById("recipient").value;
-        if (recipient === "recipient1") {
-            form.action = "https://formspree.io/f/recipient1";
-        } else if (recipient === "recipient2") {
-            form.action = "https://formspree.io/f/recipient2";
-        }
-    }
-</script>
 </head>
 <body>
 <header>
@@ -73,7 +62,7 @@
 </header>
 <div class="container">
     <p>Thank you for your interest in Clickstop! Please fill out the form below to request a personalized demo of our platform. We'll get back to you within 24 hours to schedule your demo.</p>
-    <form id="demo-request-form" method="POST" onsubmit="updateFormAction()">
+    <form id="demo-request-form" action="https://formspree.io/f/xyzgzdnw" method="POST">
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -113,13 +102,6 @@
 
         <label for="questions">Any specific questions or requirements?</label>
         <textarea id="questions" name="questions" rows="4"></textarea>
-
-        <label for="recipient">Send demo request to:</label>
-        <select id="recipient" name="recipient" required>
-            <option value="">Select recipient</option>
-            <option value="recipient1">Recipient 1</option>
-            <option value="recipient2">Recipient 2</option>
-        </select>
 
         <button type="submit">Request Demo</button>
     </form>
