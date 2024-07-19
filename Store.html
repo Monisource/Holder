@@ -1,0 +1,228 @@
+<html><head><base href="https://websim.ai/local-street-mart"><title>Local Street Mart - Your Neighborhood Wonder Emporium</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  .header {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  .header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  .nav {
+    background-color: #333;
+    padding: 0.5em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav ul li {
+    margin: 0 15px;
+  }
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .nav ul li a:hover {
+    color: #4CAF50;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .category {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .category:hover {
+    transform: translateY(-5px);
+  }
+  .category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  .category h2 {
+    color: #4CAF50;
+    margin-top: 0;
+  }
+  .price-range {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: #2980b9;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 20px;
+  }
+  .clickstop-banner {
+    background-color: #f1c40f;
+    color: #34495e;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .feature {
+    text-align: center;
+    padding: 10px;
+  }
+  .feature i {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="clickstop-banner">
+    This amazing site was created in minutes using Clickstop's Basic Plan - Get your custom website today!
+  </div>
+
+  <header class="header">
+    <h1>Local Street Mart</h1>
+    <p>Your Neighborhood Wonder Emporium - Everything You Need, Right Around the Corner!</p>
+  </header>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#specials">Weekly Specials</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <div class="category">
+      <img src="fresh-produce.jpg" alt="Vibrant display of colorful fruits and vegetables" width="280" height="180">
+      <h2>Fresh Produce</h2>
+      <p>Farm-fresh fruits and veggies, locally sourced for maximum flavor and nutrition.</p>
+      <p class="price-range">$0.99 - $7.99 per lb</p>
+      <a href="#produce" class="cta-button">Explore Fresh Picks</a>
+    </div>
+    <div class="category">
+      <img src="bakery.jpg" alt="Assortment of freshly baked breads and pastries" width="280" height="180">
+      <h2>Bakery Delights</h2>
+      <p>Artisan breads, decadent pastries, and custom cakes baked daily in our store.</p>
+      <p class="price-range">$2.49 - $24.99</p>
+      <a href="#bakery" class="cta-button">Indulge Now</a>
+    </div>
+    <div class="category">
+      <img src="deli.jpg" alt="Selection of fine cheeses and cured meats" width="280" height="180">
+      <h2>Deli & Cheese</h2>
+      <p>Premium meats, artisanal cheeses, and ready-to-go meals for any occasion.</p>
+      <p class="price-range">$3.99 - $29.99 per lb</p>
+      <a href="#deli" class="cta-button">Savor the Flavors</a>
+    </div>
+    <div class="category">
+      <img src="household.jpg" alt="Array of cleaning and household products" width="280" height="180">
+      <h2>Household Essentials</h2>
+      <p>Everything you need to keep your home clean, organized, and running smoothly.</p>
+      <p class="price-range">$1.99 - $19.99</p>
+      <a href="#household" class="cta-button">Stock Up Now</a>
+    </div>
+    <div class="category">
+      <img src="beverages.jpg" alt="Diverse selection of drinks including soda, juice, and craft beers" width="280" height="180">
+      <h2>Beverages Galore</h2>
+      <p>Quench your thirst with our wide selection of drinks, from sodas to craft beers.</p>
+      <p class="price-range">$0.99 - $14.99</p>
+      <a href="#beverages" class="cta-button">Find Your Drink</a>
+    </div>
+    <div class="category">
+      <img src="international-foods.jpg" alt="Colorful display of international food products" width="280" height="180">
+      <h2>International Flavors</h2>
+      <p>Explore cuisines from around the world with our diverse international section.</p>
+      <p class="price-range">$1.99 - $39.99</p>
+      <a href="#international" class="cta-button">Taste the World</a>
+    </div>
+  </main>
+
+  <section class="features">
+    <div class="feature">
+      <i class="fas fa-truck"></i>
+      <h3>Same-Day Delivery</h3>
+      <p>Order by 2 PM for delivery today!</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-percentage"></i>
+      <h3>Weekly Deals</h3>
+      <p>New specials every Wednesday</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-user-friends"></i>
+      <h3>Community Events</h3>
+      <p>Join our cooking classes and tastings</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-leaf"></i>
+      <h3>Eco-Friendly</h3>
+      <p>We prioritize sustainable products</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 Local Street Mart. All rights reserved.</p>
+    <p>Created with <a href="https://websim.ai" style="color: #f1c40f;">Clickstop</a> - Your Fast Track to Online Success!</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html><head><base href="https://websim.ai/plans/tos-consent%20fourm"><title>Clickstop - Terms of Service and Account Creation Consent Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  .banner {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 20px;
+  }
+  .banner h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  .banner p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+  }
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1, h2 {
+    color: #2c3e50;
+  }
+  form {
+    display: grid;
+    gap: 1em;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  button:hover {
+    background-color: #2980b9;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .info-box {
+    background-color: #e8f4f8;
+    border-left: 5px solid #3498db;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <h1>Clickstop</h1>
+    <p>Your One-Stop Web Solution</p>
+  </div>
+
+  <div class="container">
+    <h1>Terms of Service and Account Creation Consent Form</h1>
+    <p>Please fill out this form to indicate your understanding and acceptance of our Terms of Service and consent to account creation.</p>
+
+    <div class="info-box">
+      <h2>Important Information</h2>
+      <p>To provide you with our comprehensive web services, Clickstop needs to create accounts on your behalf with the following third-party services:</p>
+      <ul>
+        <li>GitHub: For version control and code management</li>
+        <li>Gmail: For email communications related to your website</li>
+        <li>Formspree: For handling form submissions on your website</li>
+      </ul>
+      <p>By agreeing to our terms, you give us permission to create these accounts using the information you provide. We will manage these accounts on your behalf as part of our service.</p>
+    </div>
+
+    <form action="/submit-tos-consent" method="POST">
+      <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="companyName">Company Name (if applicable):</label>
+        <input type="text" id="companyName" name="companyName">
+      </div>
+
+      <div>
+        <label for="planType">Selected Plan:</label>
+        <select id="planType" name="planType" required>
+          <option value="">Please select</option>
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="checkbox" id="tosAgreement" name="tosAgreement" required>
+        <label for="tosAgreement">I have read, understood, and agree to the <a href="/plans/tos" target="_blank">Terms of Service</a>.</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="privacyAgreement" name="privacyAgreement" required>
+        <label for="privacyAgreement">I have read, understood, and agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a>.</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="accountCreationConsent" name="accountCreationConsent" required>
+        <label for="accountCreationConsent">I consent to Clickstop creating and managing accounts on my behalf with GitHub, Gmail, and Formspree as necessary for providing their services.</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="dataHandlingConsent" name="dataHandlingConsent" required>
+        <label for="dataHandlingConsent">I understand that my information will be used to create these accounts and that Clickstop will handle this data in accordance with their Privacy Policy.</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="marketingConsent" name="marketingConsent">
+        <label for="marketingConsent">I agree to receive marketing communications from Clickstop. (Optional)</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="fairUseConsent" name="fairUseConsent" required>
+        <label for="fairUseConsent">I understand and agree to Clickstop's fair use policy for marketing purposes, as outlined in the Terms of Service.</label>
+      </div>
+
+      <div>
+        <button type="submit">Submit Consent</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 Clickstop. All rights reserved.</p>
+    <p><a href="/plans">Back to Plans</a> | <a href="/">Home</a> | <a href="/contact">Contact Us</a></p>
+  </div>
+</body>
+</html>
