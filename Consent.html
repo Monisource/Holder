@@ -1,4 +1,7 @@
-<html><head><base href="https://websim.ai/plans/tos-consent%20fourm"><title>Clickstop - Terms of Service and Account Creation Consent Form</title>
+<html>
+<head>
+<base href="https://websim.ai/plans/tos-consent%20fourm">
+<title>Clickstop - Terms of Service and Account Creation Consent Form</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -83,6 +86,17 @@
     margin-bottom: 20px;
   }
 </style>
+<script>
+    function updateFormAction() {
+        var form = document.getElementById("tos-consent-form");
+        var recipient = document.getElementById("recipient").value;
+        if (recipient === "recipient1") {
+            form.action = "https://formspree.io/f/recipient1";
+        } else if (recipient === "recipient2") {
+            form.action = "https://formspree.io/f/recipient2";
+        }
+    }
+</script>
 </head>
 <body>
   <div class="banner">
@@ -105,7 +119,7 @@
       <p>By agreeing to our terms, you give us permission to create these accounts using the information you provide. We will manage these accounts on your behalf as part of our service.</p>
     </div>
 
-    <form action="/submit-tos-consent" method="POST">
+    <form id="tos-consent-form" method="POST" onsubmit="updateFormAction()">
       <div>
         <label for="fullName">Full Name:</label>
         <input type="text" id="fullName" name="fullName" required>
@@ -159,6 +173,15 @@
       <div>
         <input type="checkbox" id="fairUseConsent" name="fairUseConsent" required>
         <label for="fairUseConsent">I understand and agree to Clickstop's fair use policy for marketing purposes, as outlined in the Terms of Service.</label>
+      </div>
+
+      <div>
+        <label for="recipient">Send consent form to:</label>
+        <select id="recipient" name="recipient" required>
+          <option value="">Select recipient</option>
+          <option value="recipient1">Recipient 1</option>
+          <option value="recipient2">Recipient 2</option>
+        </select>
       </div>
 
       <div>
